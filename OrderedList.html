@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Chapters - Nested Ordered List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        #main-container {
+            width: 75%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .list-title {
+            text-align: center;
+            font-size: 24px;
+            color: blueviolet;
+            margin:10px 100px 20px 100px;
+        }
+        .nested-list {
+            padding-left: 50px;
+        }
+        .chapter-title {
+            color: #007bff; /* Blue color for chapter titles */
+            font-weight: bold;
+        }
+        .nested-list ol {
+            list-style-type: decimal;
+             color: brown;
+        }
+        .nested-list ol ol {
+            list-style-type: upper-roman;
+            color: #28a745; /* Green color for first nested level */
+        }
+        .nested-list ol ol ol {
+            list-style-type: lower-alpha;
+            color: yellow; /* Red color for second nested level */
+        }
+        .list-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <h1 class="list-title">HTML Chapters</h1>
+        <ol class="nested-list">
+            <li class="list-item"><span class="chapter-title">Introduction to HTML</span>
+                <ol class="nested-list">
+                    <li class="list-item">What is HTML?</li>
+                    <li class="list-item">Basic Structure of an HTML Document</li>
+                    <li class="list-item">HTML Tags and Attributes</li>
+                </ol>
+            </li>
+            <li class="list-item"><span class="chapter-title">HTML Elements
+                <ol class="nested-list">
+                    <li class="list-item">Headings
+                        <ol class="nested-list">
+                            <li class="list-item">H1 to H6</li>
+                            <li class="list-item">Importance of Headings</li>
+                        </ol>
+                    </li>
+                    <li class="list-item">Paragraphs</li>
+                    <li class="list-item">Lists
+                        <ol class="nested-list">
+                            <li class="list-item">Ordered Lists</li>
+                            <li class="list-item">Unordered Lists</li>
+                            <li class="list-item">Nested Lists</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li class="list-item"><span class="chapter-title">HTML Attributes</span>
+                <ol class="nested-list">
+                    <li class="list-item">Global Attributes</li>
+                    <li class="list-item">Event Attributes</li>
+                    <li class="list-item">Form Attributes</li>
+                </ol>
+            </li>
+            <li class="list-item"><span class="chapter-title">HTML Forms</span>
+                <ol class="nested-list">
+                    <li class="list-item">Form Elements
+                        <ol class="nested-list">
+                            <li class="list-item">Input</li>
+                            <li class="list-item">Textarea</li>
+                            <li class="list-item">Button</li>
+                        </ol>
+                    </li>
+                    <li class="list-item">Form Validation</li>
+                    <li class="list-item">Form Submission</li>
+                </ol>
+            </li>
+            <li class="list-item"><span class="chapter-title">Advanced HTML</span>
+                <ol class="nested-list">
+                    <li class="list-item">HTML5 New Elements</li>
+                    <li class="list-item">Multimedia Elements</li>
+                    <li class="list-item">APIs
+                        <ol class="nested-list">
+                            <li class="list-item">Canvas</li>
+                            <li class="list-item">SVG</li>
+                            <li class="list-item">Web Storage</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
