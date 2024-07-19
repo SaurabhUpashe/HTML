@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fiiling</title>
+    <style>
+        form{
+            background-color: lightcyan;
+            padding:20px 0px 20px 20px;
+            margin-right: 100px;
+        }
+        #username,#age,#Birthdate, #time,#email,#file,#intreset{
+            margin-bottom: 5px;
+        }
+        #age{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML Form with Different Input Types</h2>
+    <form action="/submit-form" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">password</label>
+        <input type="password" id="password" name="username"><br><br>
+        
+        <label for="Gender">Gender:</label><br>
+        <label for="male">male:</label>
+        <input type="radio" id="male" name="Gender" value="male"><br>
+        
+        <lable for="Female">female:</lable>
+        <input type="radio" id="female" name="Gender" value="female"><br>
+       
+        <label for="age" >Age:</label>
+        <input type="age" id="age" name="age"><br>
+        
+        <label for="Birthdate">Birthdate:</label>
+        <input type="date" id="Birthdate" name="Birthdate"><br>
+        
+        <label for="meeting-time">meeting-time</label>
+        <input type="time" id="time" name="time"><br>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"><br>
+       
+        <label for="file-upload">file-upload</label>
+        <input type="file" id="file" name="file"><br>
+        
+
+        <label for="intreset">intreset:</label><br>
+        <input type="checkbox" id="intreset" name="intreset1" value="Coding">
+        <label for="intreset1">Coding</label><br>
+
+        <input type="checkbox" id="intreset" name="intreset2" value="Reading">
+        <label for="intreset2">Reading</label><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="meassage" rows="4" col="50"></textarea><br>
+       
+        <input type="submit" value="submit"><br>
+
+    </form>
+</body>
+</html>
